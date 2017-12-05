@@ -7,8 +7,6 @@
        title="<?php printf( __('Go to %s', 'cargofolio'), the_title_attribute('echo=0') ); ?>"
        rel="bookmark">
     <?php if ( has_post_thumbnail() ) {
-      // &w=200&h=134
-      // the_post_thumbnail( get_queried_object_id(), 'cargofolio-thumbnail-home' );
       echo get_the_post_thumbnail( get_queried_object_id(), 'cargofolio-thumbnail-home' );
     } else { ?>
       <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="135" class="" alt="">

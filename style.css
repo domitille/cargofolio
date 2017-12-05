@@ -9,10 +9,9 @@ License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+/* import prod version */
+@import url('css/default.min.css');
 
-/* RESET */
-@import url('styles/reset.css');
-
-/*
- * Base structure
+/* import dev version, replace the import above by this one
+@import url('css/default.css');
  */

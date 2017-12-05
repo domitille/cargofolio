@@ -14,11 +14,6 @@
 
   <title><?php cargofolio_title() ?></title>
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" async="true"></script>
-
-  <!-- Custom styles for this template -->
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>

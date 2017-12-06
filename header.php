@@ -25,7 +25,7 @@
 
 <div class="container">
   <div class="row">
-    <nav class="col-sm-4 col-md-3">
+    <nav class="col-md-4 col-lg-3">
       <header id="portfolio-title">
         <h1 class="h1">
           <a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>"
@@ -35,4 +35,4 @@
       <?php get_sidebar(); ?>
     </nav>
 
-    <main role="main" class="col-sm-8 col-md-9">
+    <main role="main" class="col-md-8 col-lg-9">

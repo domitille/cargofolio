@@ -2,7 +2,7 @@
 
 <section class="row">
   <?php while ( have_posts() ) : the_post() ?>
-  <article class="col-md-4 col-sm-6">
+  <article class="col-lg-4 col-md-6 col-sm-12">
     <a href="<?php the_permalink(); ?>"
        title="<?php printf( __('Go to %s', 'cargofolio'), the_title_attribute('echo=0') ); ?>"
        rel="bookmark">

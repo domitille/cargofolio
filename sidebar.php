@@ -1,29 +1,22 @@
 <div id="sidebar">
-  <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
-  <ul class="menu projects">
-    <?php $aPosts = get_posts('numberposts=-1'); ?>
-    <?php foreach($aPosts as $post) : ?>
-    <?php setup_postdata($post); ?>
-    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-    <?php endforeach; ?>
-  </ul>
-
-  <div id="menu-bottom">
-
+  <ul class="cat primary">
   <?php
-    $tags = get_tags();
-    foreach ( $tags as $tag ) {
-      if($tag->slug != "migliori"){
-        $tag_link = get_tag_link( $tag->term_id );
-        $html .= "<li><a href='{$tag_link}' class='{$tag->slug}'>";
-        $html .= "{$tag->name}</a></li>";
+    $cats = get_categories();
+    foreach ( $cats as $cat ) {
+      if($cat->slug != 'uncategorized') {
+        $cat_link = get_category_link( $cat->term_id );
+        $active = ($cat->term_id === get_queried_object_id())? 'current_page_item' : '';
+        $html .= "<li class='{$active}'><a href='{$cat_link}' class='{$cat->slug}'>";
+        $html .= "{$cat->name}</a></li>";
       }
     }
-    $html .= '</ul>';
     echo $html;
   ?>
+  </ul>
 
+  <div class="menu-bottom secondary">
+    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
   </div>
 
 </div>

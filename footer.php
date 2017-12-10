@@ -3,9 +3,9 @@
   <div class="row">
     <?php wp_footer(); ?>
 
-    <div class="footer">
-      &copy; <?php echo date("Y"); ?> some stuff
-    </div>
+    <footer class="footer">
+      &copy; <?php echo date("Y"); ?> <a href="https://domitille.fr">Domitille Haffner</a>
+    </footer>
   </div>
 </div> <!-- ./container -->
 

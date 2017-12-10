@@ -1,18 +1,18 @@
 <?php get_header(); ?>
 
 <?php the_post(); ?>
-<h1 class="title"><?php the_title(); ?></h1>
-<div id="content">
-  <?php the_content(); ?>
-</div>
-<div id="menu-bottom">
-  <?php
-  if(get_the_tag_list()) {
-    echo get_the_tag_list('<div class="tags secondary">tags:',', ','</div>');
-  } ?>
-  <?php dynamic_sidebar('menu_widget_area'); ?>
-</div>
-
+<article class="self">
+  <h1 class="title"><?php the_title(); ?></h1>
+  <div class="content">
+    <?php the_content(); ?>
+  </div>
+  <div class="bottom">
+    <?php
+    if(get_the_tag_list()) {
+      echo get_the_tag_list('<div class="tags secondary">tags: ',', ','</div>');
+    } ?>
+  </div>
+</article>
 <section class="row">
   <!-- display tag related references -->
   <?php

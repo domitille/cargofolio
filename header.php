@@ -29,7 +29,7 @@
       <header id="portfolio-title">
         <h1 class="h1">
           <a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>"
-            rel="home"><?php bloginfo( 'name' ) ?></a>
+            rel="home"><span><?php bloginfo( 'name' ) ?></span></a>
         </h1>
       </header>
       <?php get_sidebar(); ?>

@@ -14,7 +14,7 @@
     } ?>
       <div class="project-name"><?php the_title(); ?></div>
     </a>
-    <div class="tags">
+    <div class="tags secondary">
     <?php if(get_the_tag_list()) {
       echo get_the_tag_list('',', ');
     } ?>

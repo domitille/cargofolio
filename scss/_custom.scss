@@ -1,0 +1,97 @@
+nav {
+  ul {
+    padding: 0; margin: 0;
+  }
+  li {
+    padding: 0; margin: 0;
+    display:block;
+  }
+
+  h1 {
+    a {
+      display: block;
+      background-image: url('../smallcrabi0.gif');
+      background-repeat: no-repeat;
+      background-size: 100%; // retina
+      min-height: 176px;
+      &:hover {
+        // FIXME: this has a bug, gif should be reset to its initial position
+        background-image: url('../smallcrabi.gif');
+      }
+    }
+    span {
+      position: absolute;
+      top: -1000px; // hide this
+    }
+  }
+  .menu-bottom {
+    margin-top: 2em;
+  }
+}
+
+main {
+  margin-top: 115px;
+}
+
+
+.secondary {
+  color: $secondary;
+  a {
+    color: $secondary;
+  }
+}
+
+
+.current_page_item a {
+  background-color: #ccffcc; // green
+}
+
+.primary {
+  font-weight: bold;
+  color: $primary;
+  text-decoration: none;
+  &:hover {
+    color: rgba(255, 170, 0, 0.59);
+    text-decoration: none;
+  }
+  .project-name {
+    margin: 1em 0 .3em 0;
+  }
+}
+
+.tags {
+  margin: .1em 0;
+}
+
+
+section.row {
+  article {
+    padding-bottom: 26px;
+    text-align: center;
+    // FIXME debug
+    background-color: pink;
+    &:nth-child(odd) {
+      background-color: #ffdbd7;
+    }
+  }
+}
+
+body.single {
+  article.self {
+    .content {
+      img {
+        max-width: 100%;
+      }
+    }
+    .bottom {
+      padding: 30px 0px 70px 0px;
+    }
+  }
+}
+
+footer {
+  color: #ccc;
+  a {
+    color: #ccc
+  }
+}

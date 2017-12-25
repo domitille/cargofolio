@@ -18,3 +18,7 @@ Additional menus are displayed above the posts menu on the left.
 
 #### Widgtes
 There's one widget area below the menu on the left.
+
+-----
+
+You are welcome to [contribute](contribute.md) !

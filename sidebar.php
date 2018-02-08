@@ -1,4 +1,4 @@
-<div id="sidebar">
+<div class="col-sp-6" id="sidebar">
 
   <ul class="cat primary">
   <?php

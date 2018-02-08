@@ -26,13 +26,15 @@
 <div class="container">
   <div class="row">
     <nav class="col-md-4 col-lg-3">
-      <header id="portfolio-title">
-        <h1 class="h1">
-          <a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>"
-            rel="home"><span><?php bloginfo( 'name' ) ?></span></a>
-        </h1>
-      </header>
-      <?php get_sidebar(); ?>
+      <div class="row">
+        <header class="col-sp-6" id="portfolio-title">
+          <h1 class="h1">
+            <a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>"
+              rel="home"><span><?php bloginfo( 'name' ) ?></span></a>
+          </h1>
+        </header>
+        <?php get_sidebar(); ?>
+      </div>
     </nav>
 
     <main role="main" class="col-md-8 col-lg-9">

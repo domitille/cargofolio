@@ -11,6 +11,7 @@ nav {
   }
 
   h1 {
+    width: 200px;
     a {
       display: block;
       background-image: url('../smallcrabi0.gif');
@@ -31,7 +32,11 @@ nav {
     margin-top: 2em;
   }
 }
-
+@include media-breakpoint-only(sm) {
+  .col-sp-6 {
+    @include make-col(6, 12);
+  }
+}
 main {
   margin-top: 115px;
   section.row {

@@ -15,7 +15,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-sequence": "^0.4.6",
     "gulp-sourcemaps": "2.6.1",
-    "popper.js": "^1.12.6"
+    "jquery": "^3.2.1"
   },
   "eslintConfig": {
     "env": {

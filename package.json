@@ -1,6 +1,6 @@
 {
   "name": "cargofolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "WordPress Theme framework",
   "main": "index.js",
   "dependencies": {

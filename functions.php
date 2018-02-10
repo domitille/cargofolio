@@ -36,12 +36,24 @@ function cargofolio_title() {
 
 // Navigation Menu
 if ( function_exists( 'register_nav_menu' ) ) {
-	register_nav_menu( 'primary', 'Left Menu' );
+  register_nav_menu( 'primary', 'Left Menu' );
 }
 
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'cargofolio-thumbnail-home', 200, 134, true );
 add_image_size( 'cargofolio-thumbnail-home2x', 400, 268, true );
+add_image_size( 'cargofolio-thumbnail-homemobile', 800, 536, true );
+
+/*
+ * Enable support for custom logo.
+ *
+ *  @since Twenty Sixteen 1.2
+add_theme_support( 'custom-logo', array(
+  'height'      => 448,
+  'width'       => 352,
+  'flex-height' => true,
+) );
+ */
 
 // Check for WordPress mu or WordPress 3.0
 define('CARGOFOLIO_MB', function_exists('get_blog_option'));

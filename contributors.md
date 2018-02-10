@@ -16,11 +16,10 @@ all pull requests are welcome !
 
 3 change `style.css` to enable `@import url('css/default.css');`
 
+## compile scss automatically
 
-
-scss
-
-`nodemon -e scss,js --exec gulp build`
+run this, so that each time a scss file is modified, a new css will be compiled
+`nodemon -e scss --exec gulp build`
 
 don't have nodemon ? install it with `npm i nodemon -g`
 
@@ -29,4 +28,4 @@ don't have nodemon ? install it with `npm i nodemon -g`
 
 please address your pull requests directly to domitille/cargofolio
 
-In order to have the theme up and running without compiling anything, please include generated `default.min.css` into your commits.
+In order to have the project up and running, please include generated default.min.css into your commits

@@ -36,4 +36,4 @@ gulp.task('min', () => gulp.src('./css/default.css')
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest('./css/')));
 
-gulp.task('build', (callback) => { gulpSequence('scss', 'min', 'jslib')(callback); });
+gulp.task('build', (callback) => { gulpSequence('scss', 'min')(callback); });
